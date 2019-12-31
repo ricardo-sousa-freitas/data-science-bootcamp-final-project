@@ -20,5 +20,16 @@ Archivos:
 
 * pf_funcion_prediccion.py: script de la función que descarga una canción de Youtube en formato .wav, extrae los respectivos features con Librosa y predice el género musical con el modelo "best_model_feat_10classes.h5". Esta es la función a la que llama la interfaz gráfica (archivo: interfaz_prediccion_genero.pyw).
 
+* pf_funciones.py: script de la función que génera el plot de la matriz de confusión.
+
+* results_grid_search_features.csv: archivo .csv con los resultados del GridSearchCV de modelos de Redes Neuronales para el dataset de features (archivo: 4.pf_mod_dataset_features.py).
+
+* results_grid_search_images.csv: archivo .csv con los resultados del GridSearchCV de modelos de Redes Neuronales para el dataset de imágenes (archivo: 2.pf_mod_dataset_imagenes.py).
+
+Carpetas:
+* Modelos_RN: modelos guardados en formato .h5 de Keras. Están los modelos para 3 y 10 clases del dataset de features. Debido al gran peso de los archivos de los modelos de imágenes, estos no pudieron guardarse en GitHub.
+
+* Scalers: archivos .pickle del escalamiento (StandardScaler) del dataset de features para 3 y 10 clases, antes de alimentar la Red Neuronal.
+
 
 
